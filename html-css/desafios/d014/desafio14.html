@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/imagem completa.png" type="image/x-icon">
     <title>tabelas</title>
     <style>
         body{
@@ -10,12 +11,18 @@
             font-weight: bold;
         }
         table {
-            width: 400px;
+            border-collapse: collapse;
+            width: 500px;
         }
         td,th {
-            padding: 10px;
+            text-align: center;
+            padding: 5px;
             border: 1px solid black;
           
+        }
+        .color {
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
@@ -25,27 +32,65 @@
         <caption>Notas escolares</caption>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th colspan="2">disciplinas</th>
-                <th colspan="2">Notas
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th rowspan="2">Média</th>
+                <th class="color" rowspan="2" scope="col">Área</th>
+                <th class="color" colspan="2" scope="col">Disciplinas</th>
+                <th class="color" colspan="4" scope="col">Notas
+                   <br> Nota 1 Nota 2
+                </th>
+                <th class="color" rowspan="2">Média</th>
+                
             </tr>
+            <tr>
+          
+            </tr>
+
         </thead>
         <tbody>
             <tr>
                 <th rowspan="4">Extras</th>
-                <td>matematica</td>
-                <td>9.5</td>
-                <td>8.0</td>
-                <td>10.0</td>
+                <td colspan="2">matematica</td>
+                <td colspan="2">9.5</td>
+                <td colspan="2">8.0</td>
+                <td colspan="2">10.0</td>
             </tr>
             <tr>
-                <td>fisica</td>
-                <td>6.0</td>
-                <td>8.0</td>
-                <td>10.0</td>
+                <td colspan="2">fisica</td>
+                <td colspan="2">6.0</td>
+                <td colspan="2">8.0</td>
+                <td colspan="2">10.0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Química</td>
+                <td colspan="2">7.0</td>
+                <td colspan="2">9.0</td>
+                <td colspan="2">8.0</td>
+            </tr>
+            <tr>
+                <td colspan="2">biologia</td>
+                <td colspan="2">8.0</td>
+                <td colspan="2">7.0</td>
+                <td colspan="2">9.0</td>
+            </tr>
+            <tr>
+                <th class="color" colspan="7">Média de exatas</th>
+                <td class="color" colspan="2">10.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td colspan="2">Historia</td>
+                <td colspan="2">8.0</td>
+                <td colspan="2">7.0</td>
+                <td colspan="2">10.0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Geogafia</td>
+                <td colspan="2">7.0</td>
+                <td colspan="2">9.0</td>
+                <td colspan="2">10.0</td>
+            </tr>
+            <tr>
+                <th class="color" colspan="7">média de Humanas</th>
+                <td class="color" colspan="2">10.0</td>
             </tr>
         </tbody>
     </table>
