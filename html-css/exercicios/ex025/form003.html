@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulário</title>
+    <title>Formulário</title>
+    <style>
+        /* Adicione estilos CSS conforme necessário */
+    </style>
 </head>
 <body>
-    <h1>teste de formulário</h1>
+    <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
-            <label for="inome">nome:</label>
+            <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required value="5">
+        </p>
+        <p>
+            <label for="imes">Período letivo:</label>
+            <input type="month" name="mes" id="imes" value="2024-01">
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora">
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function atualizarDataAtual() {
+            var hoje = new Date();
+            var ano = hoje.getFullYear();
+            var mes = hoje.getMonth() + 1; // Lembrando que os meses são indexados de 0 a 11 em JavaScript
+            var dia = hoje.getDate();
+
+            // Formate a data como YYYY-MM-DD
+            var dataAtualFormatada = ano + '-' + (mes < 10 ? '0' + mes : mes) + '-' + (dia < 10 ? '0' + dia : dia);
+
+            // Atualize os valores dos campos de data
+            document.getElementById('imes').value = dataAtualFormatada;
+            document.getElementById('idia').value = dataAtualFormatada;
+        }
+
+        // Atualize a data atual quando a página for carregada
+        window.onload = atualizarDataAtual;
+    </script>
 </body>
 </html>
