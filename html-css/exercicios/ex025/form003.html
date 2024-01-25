@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <style>
-        /* Adicione estilos CSS conforme necessário */
-    </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
@@ -41,7 +38,7 @@
         function atualizarDataAtual() {
             var hoje = new Date();
             var ano = hoje.getFullYear();
-            var mes = hoje.getMonth() + 1; // Lembrando que os meses são indexados de 0 a 11 em JavaScript
+            var mes = hoje.getMonth() + 1; 
             var dia = hoje.getDate();
 
             // Formate a data como YYYY-MM-DD
@@ -52,7 +49,6 @@
             document.getElementById('idia').value = dataAtualFormatada;
         }
 
-        // Atualize a data atual quando a página for carregada
         window.onload = atualizarDataAtual;
     </script>
 </body>
