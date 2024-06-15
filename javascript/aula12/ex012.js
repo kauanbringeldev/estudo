@@ -6,5 +6,6 @@ if(hora < 12) {
 }else if (hora <= 18){
     console.log('Buenas tardes')
 }else {
-    console.log('buenas notches')
+    console.log('buenas notches') 
+
 }
