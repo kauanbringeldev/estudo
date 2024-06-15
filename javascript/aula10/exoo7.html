@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando</title>
+</head>
+<body>
+    <h1>somando valores</h1>
+    <input type="number" name="val1" id="val1"> + 
+    <input type="number" name="val2" id="val2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">resultado</div>
+    <script>
+        function somar() {
+            var val01 = window.document.getElementById('val1')
+            var val02 = window.document.getElementById('val2')
+            var res = window.document.getElementById('res')
+            var val1 = Number(val1.value)
+            var val2= Number(val2.value)
+            var s = val1 + val2
+            resul.innerText = `a soma enter ${val1} e ${val2} é igual á ${s}`
+        }
+    </script>
+</body>
+</html>

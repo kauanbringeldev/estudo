@@ -1,0 +1,5 @@
+Maiúscula e minuscula fazem diferença
+
+Tente escolher nomes coerentes para as variaveis
+
+Evite se torna um 'programador alfabeto' ou um 'programador contador' 

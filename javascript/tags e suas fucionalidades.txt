@@ -1,0 +1,59 @@
+            TAGS EM JAVASCRIPT E SUAS FUCIONALIDADES
+
+1º window.alert('como diz o nome faz um alerta para o usuario assim que atualizado a pagina')
+------------------------------------------------------------------------------------------------
+2ºwindow.confirm('assim que a pagina for atualizada le farar uma perguna e vc receberar duas opções CANCELAR ou OK')
+----------------------------------------------------------------------------------------------------------------------
+3ºwindow.prompt('como a segunda também ira le fazer uma pergunta so que diferente da segunda tag vc ira poder escrever sua resposta')
+------------------------------------------------------------------------
+4º var uma variavel não sei como explicar melhor
+--------------------------------------------------------------------
+typeof (revela o tipo primitivo da tag tipo o que ela e 15 == number "google" == string)
+--------------------------------------------------------------------------------------
+(number + number ) para adição 
+string + string para concatenação tipo 'o aluno ' + nome+ ' com ' + idade + 'anos tirou ' + nota   
+templete string =`o aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+s.length = quantos caracteres a string tem
+s.toUpperCase() = tudo letra 'maiúscula'
+s.toLowerCase() tudo minuscula
+-------------------------------------------------------
+convertendo string para numero
+Number.parseInt = força número inteiro 
+Number.parseFloat = força número real 
+Number = deixa o propio javascript decidir se um numero inteiro ou real
+----------------------------------------------------------------------- convertendo número para string
+string(n) = vai gerar um string normal
+n.tostring = o que eu quero que converta para uma string
+--------------------------------------------------------------------
+document.write(`Escreve na tela`) 
+document.writeln(`pular linha`)
+---------------------------------------------------------------------------
+  operadoes    operandos
+aritmeticos  5+2 = 7 + = +
+atribuição   5-2 = 3 - = -
+relacionais  5*2 = 10 * = x .
+lógicos      5/2 = 2.5 / = ÷
+ternario     5%2 = 1 resto da divisão inteira
+             5**2 = 25 potencia elevado a dois
+para fazer conta na ordem que foi escrita fazer 
+(5 + 3) / 2 assim ira fazer primeiro a adição
+           ordem de precedencia dos operadores de aritmetica
+()
+**
+* / %
++ -
+()*** / %+ - precedencia
+ > < >= <= relacinais
+! negação == não
+&& quero os dois == amesma coisa de "e" 
+|| pode ser um "ou" outro== ou
+-----------------------------------------------------------------------------------------------------------------------------------------
+como fazer um comprimentador com indentificador de horas do computador do usuario
+                                    exemplo
+var agora = new date()
+var hora =  agora.gethours()
+
+                                    Condição multipla
+                        switch(expresão){
+                          todas as cases e no final de cada case precisa obriatorio sempre ter um break so não na default 
+                        }
